@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parallel Test Suite]" parallel="tests">
+  <parameter name="browser" value="Edge"/>
+  <test name="Edge Test(failed)" parallel="tests">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="com.Selenium.Practice.ParallelTest">
+        <methods>
+          <include name="picklist"/>
+          <include name="multiPicklist"/>
+          <include name="run"/>
+          <include name="run"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="getUrl"/>
+        </methods>
+      </class> <!-- com.Selenium.Practice.ParallelTest -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
+  <test name="Chrome Test(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.Selenium.Practice.ParallelTest">
+        <methods>
+          <include name="picklist"/>
+          <include name="multiPicklist"/>
+          <include name="run"/>
+          <include name="run"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.Selenium.Practice.ParallelTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test name="Firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.Selenium.Practice.ParallelTest">
+        <methods>
+          <include name="picklist"/>
+          <include name="multiPicklist"/>
+          <include name="run"/>
+          <include name="run"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.Selenium.Practice.ParallelTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Parallel Test Suite] -->
